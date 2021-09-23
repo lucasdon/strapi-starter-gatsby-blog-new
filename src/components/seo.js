@@ -42,23 +42,23 @@ const SEO = ({ seo = {} }) => {
       );
     }
     if (fullSeo.shareImage) {
-      const imageUrl =
-        (process.env.GATSBY_ROOT_URL || "http://localhost:8000") +
-        fullSeo.shareImage.localFile.publicURL;
-      tags.push(
-        {
-          name: "image",
-          content: imageUrl,
-        },
-        {
-          property: "og:image",
-          content: imageUrl,
-        },
-        {
-          name: "twitter:image",
-          content: imageUrl,
-        }
-      );
+      // const imageUrl =
+      //   (process.env.GATSBY_ROOT_URL || "http://localhost:8000") +
+      //   fullSeo.shareImage.localFile.publicURL;
+      // tags.push(
+      //   {
+      //     name: "image",
+      //     content: imageUrl,
+      //   },
+      //   {
+      //     property: "og:image",
+      //     content: imageUrl,
+      //   },
+      //   {
+      //     name: "twitter:image",
+      //     content: imageUrl,
+      //   }
+      // );
     }
     if (fullSeo.article) {
       tags.push({

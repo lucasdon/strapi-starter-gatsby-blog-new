@@ -40,7 +40,7 @@ const Article = ({ data }) => {
   const seo = {
     metaTitle: article.title,
     metaDescription: article.description,
-    shareImage: article.image,
+    // shareImage: article.image,
     article: true,
   };
 
@@ -48,14 +48,14 @@ const Article = ({ data }) => {
     <Layout seo={seo}>
       <div>
         <div style={{ display: "grid" }}>
-          <GatsbyImage
+          {/* <GatsbyImage
             style={{
               gridArea: "1/1",
             }}
             alt={`Picture for ${article.title} article`}
             image={article.image.localFile.childImageSharp.gatsbyImageData}
             layout="fullWidth"
-          />
+          /> */}
           <div
             style={{
               // By using the same grid area for both, they are stacked on top of each other
@@ -78,14 +78,14 @@ const Article = ({ data }) => {
             <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
               <div>
                 {article.author.picture && (
-                  <GatsbyImage
+                  {/* <GatsbyImage
                     image={
                       article.author.picture.localFile.childImageSharp
                         .gatsbyImageData
                     }
                     alt={`Picture of ${article.author.name}`}
                     style={{ borderRadius: "50%" }}
-                  />
+                  /> */}
                 )}
               </div>
               <div className="uk-width-expand">
