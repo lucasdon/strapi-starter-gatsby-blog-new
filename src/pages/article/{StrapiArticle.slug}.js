@@ -76,18 +76,18 @@ const Article = ({ data }) => {
             <hr className="uk-divider-small" />
 
             <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
-              <div>
+              {/* <div>
                 {article.author.picture && (
-                  {/* <GatsbyImage
+                  <GatsbyImage
                     image={
                       article.author.picture.localFile.childImageSharp
                         .gatsbyImageData
                     }
                     alt={`Picture of ${article.author.name}`}
                     style={{ borderRadius: "50%" }}
-                  /> */}
+                  />
                 )}
-              </div>
+              </div> */}
               <div className="uk-width-expand">
                 <p className="uk-margin-remove-bottom">
                   By {article.author.name}
