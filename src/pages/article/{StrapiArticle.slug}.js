@@ -13,23 +13,23 @@ export const query = graphql`
       description
       content
       published_at
-      image {
-        localFile {
-          publicURL
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
-          }
-        }
-      }
+      # image {
+      #   localFile {
+      #     publicURL
+      #     childImageSharp {
+      #       gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
+      #     }
+      #   }
+      # }
       author {
         name
-        picture {
-          localFile {
-            childImageSharp {
-              gatsbyImageData(width: 30)
-            }
-          }
-        }
+        # picture {
+        #   localFile {
+        #     childImageSharp {
+        #       gatsbyImageData(width: 30)
+        #     }
+        #   }
+        # }
       }
     }
   }

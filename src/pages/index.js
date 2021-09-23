@@ -28,11 +28,11 @@ const query = graphql`
       seo {
         metaTitle
         metaDescription
-        shareImage {
-          localFile {
-            publicURL
-          }
-        }
+        # shareImage {
+        #   localFile {
+        #     publicURL
+        #   }
+        # }
       }
     }
     allStrapiArticle {
@@ -44,22 +44,22 @@ const query = graphql`
           category {
             name
           }
-          image {
-            localFile {
-              childImageSharp {
-                gatsbyImageData(width: 800, height: 500)
-              }
-            }
-          }
+          # image {
+          #   localFile {
+          #     childImageSharp {
+          #       gatsbyImageData(width: 800, height: 500)
+          #     }
+          #   }
+          # }
           author {
             name
-            picture {
-              localFile {
-                childImageSharp {
-                  gatsbyImageData(width: 30, height: 30)
-                }
-              }
-            }
+            # picture {
+            #   localFile {
+            #     childImageSharp {
+            #       gatsbyImageData(width: 30, height: 30)
+            #     }
+            #   }
+            # }
           }
         }
       }
